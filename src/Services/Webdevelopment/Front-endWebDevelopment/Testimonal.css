@@ -1,0 +1,331 @@
+/* =========================
+   SECTION
+========================= */
+
+.testimonials-section {
+  width: 100%;
+  min-height: 100vh; 
+   background: black;
+  padding: 120px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+/* =========================
+   BLUE LIGHT EFFECT
+========================= */
+
+.testimonials-section::after {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  bottom: -250px;
+
+  transform: translateX(-50%);
+
+  width: 3000px;
+  height: 600px;
+
+  background: radial-gradient(
+    circle,
+    rgba(53, 94, 252, 0.95) 0%,
+    rgba(53, 94, 252, 0.45) 35%,
+    rgba(53, 94, 252, 0.15) 60%,
+    transparent 80%
+  );
+
+  filter: blur(90px);
+
+  z-index: 0;
+
+  pointer-events: none;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.testimonial-container {
+  width: 100%;
+  max-width: 1450px;
+  margin: auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 2;
+}
+
+/* =========================
+   TOP CONTENT
+========================= */
+
+.testimonial-header {
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+.testimonial-subtitle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  color: white;
+  font-size: 18px;
+
+  margin-bottom: 25px;
+}
+
+.testimonial-title {
+  color: white;
+
+  font-size: 68px;
+
+  line-height: 1.15;
+
+  font-weight: 600;
+
+  max-width: 1050px;
+
+  margin: auto;
+
+  letter-spacing: -2px;
+}
+
+/* =========================
+   CARD WRAPPER
+========================= */
+
+
+/* =========================
+   CARD
+========================= */
+
+.testimonial-cardapp {
+  position: relative;
+
+  width: 420px;
+  min-width: 320px;
+  height: 470px;
+
+  padding: 40px;
+
+  border-radius: 24px;
+
+
+
+  backdrop-filter: blur(20px);
+
+
+  overflow: hidden;
+
+  flex-shrink: 0;
+
+  transition:
+    transform 1s cubic-bezier(0.55, 0.55, 0, 1),
+    opacity 1s ease,
+    filter 1s ease;
+    
+}
+
+
+/* =========================
+   BLUE LIGHT EFFECT
+========================= */
+
+.testimonial-sections::after {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  bottom: -250px;
+
+  transform: translateX(-50%);
+
+  width: 3000px;
+  height: 600px;
+
+  background: radial-gradient(
+    circle,
+    rgba(43, 94, 255, 0.95) 0%,
+    rgba(43, 94, 255, 0.45) 35%,
+    rgba(43, 94, 255, 0.15) 60%,
+    transparent 80%
+  );
+
+  filter: blur(90px);
+
+  z-index: 0;
+
+  pointer-events: none;
+}
+/* =========================
+   CARD POSITION
+========================= */
+
+.testimonial-cardapp:nth-child(1) {
+  transform: rotate(-4deg) translateY(20px);
+  z-index: 1;
+    background: #1E1E1E !important;
+}
+
+.testimonial-cardapp:nth-child(2) {
+  transform: rotate(3deg) translateY(0px);
+  margin-left: -20px;
+  z-index: 3;
+}
+
+.testimonial-cardapp:nth-child(3) {
+  transform: rotate(-3deg) translateY(20px);
+  margin-left: -20px;
+  z-index: 2;
+   background: #1E1E1E !important;
+}
+
+.testimonial-cardapp:nth-child(4) {
+  transform: rotate(4deg) translateY(5px);
+  margin-left: -20px;
+  z-index: 4;
+}
+
+
+
+/* =========================
+   SCROLL ANIMATION
+========================= */
+
+.card-hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(140px) scale(0.8);
+}
+
+.testimonial-cardapp:nth-child(1).card-hidden {
+  transition-delay: 0ms;
+}
+
+.testimonial-cardapp:nth-child(2).card-hidden {
+  transition-delay: 250ms;
+}
+
+.testimonial-cardapp:nth-child(3).card-hidden {
+  transition-delay: 500ms;
+}
+
+.testimonial-cardapp:nth-child(4).card-hidden {
+  transition-delay: 750ms;
+}
+
+.testimonial-cardapp.card-show:nth-child(1) {
+  opacity: 1;
+  filter: blur(0);
+  transform: rotate(-4deg) translateY(20px) scale(1);
+}
+
+.testimonial-cardapp.card-show:nth-child(2) {
+  opacity: 1;
+  filter: blur(0);
+  transform: rotate(3deg) translateY(0px) scale(1);
+}
+
+.testimonial-cardapp.card-show:nth-child(3) {
+  opacity: 1;
+  filter: blur(0);
+  transform: rotate(-3deg) translateY(20px) scale(1);
+}
+
+.testimonial-cardapp.card-show:nth-child(4) {
+  opacity: 1;
+  filter: blur(0);
+  transform: rotate(4deg) translateY(5px) scale(1);
+}
+
+/* =========================
+   HOVER
+========================= */
+
+.testimonial-cardapp:hover {
+  transform: translateY(-20px) rotate(0deg) scale(1.03) !important;
+}
+
+/* =========================
+   QUOTE
+========================= */
+
+.testimonial-quote {
+  font-size: 55px;
+  color: rgba(255, 255, 255, 0.18);
+  font-weight: 700;
+}
+
+/* =========================
+   TEXT
+========================= */
+
+.testimonial-textcustom {
+  margin-top: 45px;
+
+  color: rgba(255, 255, 255, 0.88);
+
+  font-size: 24px;
+
+  line-height: 1.8;
+}
+
+/* =========================
+   BOTTOM INFO
+========================= */
+
+.testimonial-info {
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
+}
+
+.testimonial-name {
+  color: white;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.testimonial-role {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 991px) {
+  .testimonial-cardapp {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .testimonial-cardapp {
+    width: 100%;
+    max-width: 350px;
+    min-width: auto;
+    height: auto;
+    min-height: 420px;
+
+    margin-left: 0 !important;
+    transform: rotate(0deg) !important;
+  }
+
+  .card-show {
+    transform: translateY(0) scale(1) !important;
+  }
+
+  .testimonial-title {
+    font-size: 36px;
+  }
+
+  .testimonial-text {
+    font-size: 17px;
+    line-height: 1.7;
+  }
+}

@@ -1,0 +1,115 @@
+/* Home.css */
+
+.home {
+  width: 100%;
+  min-height: 100vh;
+  transition: all 0.4s ease;
+}
+
+/* =========================
+   LIGHT MODE
+========================= */
+
+.light-home {
+  background: #ffffff;
+  color: #111111;
+}
+
+/* =========================
+   DARK MODE
+========================= */
+
+.dark-home {
+  background: #0f0f0f;
+  color: #ffffff;
+}
+
+/* =========================
+   GLOBAL SECTION STYLING
+========================= */
+
+.dark-home section {
+  background: #0f0f0f;
+  color: #ffffff;
+}
+
+.light-home section {
+  background: #ffffff;
+  color: #111111;
+}
+
+/* =========================
+   HEADINGS
+========================= */
+
+.dark-home h1,
+.dark-home h2,
+.dark-home h3,
+.dark-home h4,
+.dark-home h5,
+.dark-home h6 {
+  color: #ffffff;
+}
+
+.light-home h1,
+.light-home h2,
+.light-home h3,
+.light-home h4,
+.light-home h5,
+.light-home h6 {
+  color: #111111;
+}
+
+/* =========================
+   PARAGRAPH
+========================= */
+
+.dark-home p {
+  color: #d1d1d1;
+}
+
+.light-home p {
+  color: #555555;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.dark-home .card,
+.dark-home .service-card,
+.dark-home .testimonial-card {
+  background: #181818;
+  border: 1px solid #2a2a2a;
+}
+
+.light-home .card,
+.light-home .service-card,
+.light-home .testimonial-card {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.dark-home button {
+  background: #ffffff;
+  color: #111111;
+}
+
+.light-home button {
+  background: #111111;
+  color: #ffffff;
+}
+
+/* =========================
+   SMOOTH TRANSITION
+========================= */
+
+.home *,
+.home *::before,
+.home *::after {
+  transition: all 0.3s ease;
+}
