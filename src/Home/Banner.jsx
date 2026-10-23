@@ -80,14 +80,18 @@
 // export default HeroSection;
 
 
-import React from 'react';
-import img1 from "../img/Group 147 (1).png";
+import React, { useContext } from "react";
+// import img1 from "../img/Group 147 (1).png";
 import "./Bannersection.css";
 import smallImg from "../img/banner-1.png";
 import { HiArrowTurnDownRight } from "react-icons/hi2";
+import { ThemeContext } from "../App";
+import logoBlack from "../img/Group 147 (1).png"; // Normal Mode Logo
+import logoWhite from "../img/bannerGroup 147.png"; // Dark Mode Logo
 
 
 function New() {
+    const { darkMode } = useContext(ThemeContext);
     return (
         <>
             <section className="hero-section">
@@ -99,10 +103,12 @@ function New() {
                                     WHY CHOOSE GROW DEVELOPER?
                                 </span>
 
-                                <h6 className="mt-3">
+                                {/* <h6 className="mt-3">
                                     It Is Your Safe Place In <br />
                                     An Unsafe World
-                                </h6>
+                                </h6> */}
+                                <p className='mt-3 bannerp'> It Is Your Safe Place In <br />
+                                    An Unsafe World</p>
 
                                 <img src={smallImg} alt="" className="small-imgs" />
                             </div>
@@ -112,7 +118,7 @@ function New() {
                         <div className="col-lg-6 text-center position-relative center-box">
                             {/* <img src={heroImg} alt="" className="hero-img" /> */}
                             <div className='newdemo'>
-                                <img className='Newimg' src={img1} alt="" />
+                                <img className='Newimg' src= {darkMode ? logoWhite : logoBlack} alt="" />
                             </div>
 
                         </div>

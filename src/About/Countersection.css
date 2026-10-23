@@ -330,13 +330,16 @@ body.dark-theme {
   color: #ffffff;
 } */
 
+ .stats-section {
 
-.stats-section {
-
-  color: #000;
+  color: #000000;
   padding:90px 40px !important;
   border-radius: 20px;
-}
+  background-color: #f2f2f2 !important;
+  border-radius: 30px;
+  margin-left: 12px;
+  margin-right: 12px;
+} 
 
 
 /* .small-titlecounter {
@@ -352,7 +355,7 @@ body.dark-theme {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  font-size: 20px;
+  font-size: 21px;
   color: #000000;
   margin-bottom: 20px;
   font-weight: 600;
@@ -428,7 +431,7 @@ body.dark-theme {
 
 
 .main-titlenew{
-  font-size: 65px;
+  font-size: 70px;
   font-weight:600;
   line-height: 1.2;
   color: #1E1E1E;
@@ -436,7 +439,7 @@ body.dark-theme {
 }
 
 
-.stat-item {
+/* .stat-item {
   display: flex;
   align-items: center;
   padding: 25px 0;
@@ -444,7 +447,7 @@ body.dark-theme {
   transition: all 0.3s ease;
   gap:150px;
 
-}
+} */
 
 .stat-item:last-child {
   border-bottom: none;
@@ -475,16 +478,15 @@ body.dark-theme {
   max-width: 50%; 
 }
 
-.stat-right p {
+/* .stat-right p {
   font-size: 18px;
   color:#1E1E1E;
-  /* margin: 0; */
-  /* line-height: 1.7; */
+
 font-family: "DM Sans";
 font-weight:600;
 margin-top: 70px;
-/* padding-left: 80px; */
-}
+
+} */
 
 
 @media (max-width: 992px) {
@@ -531,51 +533,20 @@ margin-top: 70px;
 
  
 
- /* :root {
-  --bg-main: #ffffff;
-  --bg-card: #f2f2f2;
-  --text-main: white;
-  --text-light: white ;
-  --border-color: #d9d9d9;
-} */
-
-
-body.dark-theme {
-  --bg-main: #121212;
-  --bg-card: #1e1e1e;
-  --text-main: #ffffff;
-  --text-light: #cfcfcf;
-  --border-color: white;
-}
-
-/* =========================
-   STATS SECTION
-========================= */
-
-.stats-section {
-
-  padding: 90px 0;
-  border-radius: 20px;
-  transition: 0.4s ease;
-}
 
 
 
-.main-titlenew {
-  font-size: 65px;
-  font-weight: 600;
-  line-height: 1.2;
-  color: var(--text-main);
-  transition: 0.4s ease;
-}
+
 
 .stat-item {
   display: flex;
   align-items: center;
-  padding: 25px 0;
-  border-bottom: 1px solid var(--border-color);
+  padding: 25px 25px;
+  border-bottom: 1px solid #000000;
   transition: all 0.3s ease;
-  gap: 150px;
+  gap: 170px;
+ 
+  
 }
 
 .stat-item:last-child {
@@ -587,19 +558,17 @@ body.dark-theme {
 }
 
 .stat-left h2 {
-  font-size: 55px;
-  font-weight: bold;
+  font-size:70px;
+  font-weight:800;
   margin: 0;
-  color: var(--text-main);
-  font-family: "DM Sans";
+  color:#1E1E1E;
   transition: 0.4s ease;
 }
 
 .stat-left p {
   font-size: 18px;
-  color: var(--text-main);
+  color:#1E1E1E;
   margin-top: 6px;
-  font-family: "DM Sans";
   font-weight: 500;
   transition: 0.4s ease;
 }
@@ -609,17 +578,14 @@ body.dark-theme {
 }
 
 .stat-right p {
-  font-size: 18px;
+  font-size: 20px;
   color:#1E1E1E;
-  font-family: "DM Sans";
   font-weight: 600;
-  margin-top: 70px;
+  margin-top: 75px;
   transition: 0.4s ease;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+
 
 @media (max-width: 992px) {
   .main-titlenew {
@@ -659,36 +625,46 @@ body.dark-theme {
   }
 
   .stat-right p {
-    font-size: 13px;
-    margin-top: 15px;
+    font-size: 15px;
+    /* margin-top: 15px; */
     padding-left: 0;
   }
 }
 
 
-.dark-mode .stat-left h2{
-  color: #ffffff;
+.dark-mode  .stats-section{
+  background-color: #161616 !important;
+  color: #FFFFFF !important;
 }
 
-.dark-mode .stat-left p{
-  color: #ffffff;
-}
-
-.dark-mode .stat-right p{
-  color: #ffffff;
-}
-
-.dark-mode .stats-section{
-  background-color: #161616;
-  color: #ffffff;
-}
-.light-mode .stats-section{
-  background-color: #f2f2f2 !important;
-}
 
 .dark-mode .small-titlecounter{
-  color: #ffffff;
+  color: #FFFFFF;
 }
 .dark-mode .main-titlenew{
-  color: #ffffff;
+  color: #FFFFFF;
+}
+.dark-mode .stat-left h2 {
+  color: #FFFFFF;
+}
+.dark-mode .stat-left p{
+  color: #FFFFFF;
+}
+.dark-mode .stat-right p{
+  color: #FFFFFF;
+}
+
+@media (max-width:767px) {
+  .small-titlecounter{
+    font-size: 25px;
+  }
+  .main-titlenew{
+    font-size: 25px;
+  }
+  .stat-left h2{
+    font-size: 25px;
+  }
+  .stat-left p{
+    font-size: 25px;
+  }
 }

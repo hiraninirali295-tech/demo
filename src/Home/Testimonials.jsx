@@ -192,13 +192,32 @@ const Testimonials = () => {
                 <MdArrowOutward className="small-icon" />
               </p> */}
 
-              <p className="small-text" data-text="Testimonials">
+              {/* <p className="small-text" data-text="Testimonials">
                 <span className="small-text-inner">Testimonials</span>
 
                 <span className="testimonial-arrow-wrapper">
                   <MdArrowOutward className="testimonial-arrow testimonial-arrow-first" />
                   <MdArrowOutward className="testimonial-arrow testimonial-arrow-second" />
                 </span>
+              </p> */}
+
+                <p className="testimonial-tag">
+
+                <span className="testimonial-tag-wrap">
+                  <span className="testimonial-tag-text">Testimonials</span>
+                  <span className="testimonial-tag-text-hover">Testimonials</span>
+                </span>
+
+                <span className="testimonial-tag-icon-wrap">
+                  <span className="testimonial-tag-icon">
+                    <MdArrowOutward />
+                  </span>
+
+                  <span className="testimonial-tag-icon-hover">
+                    <MdArrowOutward />
+                  </span>
+                </span>
+
               </p>
 
               <h3 className="testimonals-titles">

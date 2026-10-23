@@ -1,6 +1,6 @@
 import React from "react";
 import "./Webdesign.css";
-import bannerImg from "../../img/webdesign.png";
+import bannerImg from "../../img/Sales.png";
 
 const WebDesignSection = () => {
   return (
@@ -9,7 +9,7 @@ const WebDesignSection = () => {
       {/* Hero Section */}
       <div className="webdesign-hero">
         <div className="hero-content">
-          <h1>Sales</h1>
+          <h1>Sales Course</h1>
 
           <p>
             Learn how to design professional, user-friendly, and fully
@@ -21,11 +21,11 @@ const WebDesignSection = () => {
 
       {/* Skills Navigation */}
       <div className="webdesign-skills">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>Bootstrap</span>
-        <span>VS Code</span>
+        <span>Sales Fundamentals</span>
+        <span>Customer Relationship Management (CRM)</span>
+        <span>Sales Funnel Management</span>
+        <span>Customer Communication Skills</span>
+        <span>Sales Analytics & Reporting</span>
       </div>
 
       {/* Image Section */}

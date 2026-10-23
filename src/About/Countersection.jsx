@@ -203,7 +203,7 @@ const StatsSection = () => {
 
               <span className="small-titlecounter-wrap">
                 <span className="small-titlecounter-text">
-                 Interesting Stats
+                 Interesting status
                 </span>
 
                 <span className="small-titlecounter-text-hover">

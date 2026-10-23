@@ -1,6 +1,6 @@
 import React from "react";
 import "./Webdesign.css";
-import bannerImg from "../../img/webdesign.png";
+import bannerImg from "../../img/Digital Marketing.png";
 
 const WebDesignSection = () => {
   return (
@@ -12,20 +12,19 @@ const WebDesignSection = () => {
           <h1>Digital Marketing</h1>
 
           <p>
-            Learn how to design professional, user-friendly, and fully
-            responsive websites from basic to advanced level with real-world
-            projects.
+            Build in-demand digital marketing skills from scratch.
+            Gain hands-on experience through real-world campaigns.
           </p>
         </div>
       </div>
 
       {/* Skills Navigation */}
       <div className="webdesign-skills">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>Bootstrap</span>
-        <span>VS Code</span>
+        <span>Google Ads</span>
+        <span>Pay-Per-Click (PPC)</span>
+        <span>Social Media Marketing (SMM)</span>
+        <span>Facebook Marketing</span>
+        <span>Instagram Marketing</span>
       </div>
 
       {/* Image Section */}

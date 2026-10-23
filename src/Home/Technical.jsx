@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Technical.css";
+import { MdArrowOutward } from "react-icons/md";
 
 // import img1 from "../img/$RPXI1HJ copy.png";
 // import img2 from "../img/Whychoose--1.png";
@@ -42,7 +43,23 @@ function TechnicalSkills() {
     <section className="technical-main-section">
 
       <div className="technical-top-text">
-      
+        <p className="technical-skills">
+          <span className="technical-skills-text">
+          Coding & Programming
+          </span>
+
+          <span className="technical-skills-text-hover">
+            Coding & Programming
+          </span>
+
+          <span className="technical-skills-icon">
+            <MdArrowOutward />
+          </span>
+
+          <span className="technical-skills-icon-hover">
+            <MdArrowOutward />
+          </span>
+        </p>
 
         <h1>Technical Skills</h1>
       </div>
@@ -71,9 +88,8 @@ function TechnicalSkills() {
       {/* HOVER IMAGE */}
 
       <div
-        className={`technical-hover-image ${
-          activeImage ? "show-image" : ""
-        }`}
+        className={`technical-hover-image ${activeImage ? "show-image" : ""
+          }`}
       >
         {activeImage && <img src={activeImage} alt="" />}
       </div>

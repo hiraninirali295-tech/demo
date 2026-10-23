@@ -1,6 +1,6 @@
 import React from "react";
 import "./Webdesign.css";
-import bannerImg from "../../img/webdesign.png";
+import bannerImg from "../../img/Game Development.png";
 
 const WebDesignSection = () => {
   return (
@@ -9,23 +9,22 @@ const WebDesignSection = () => {
       {/* Hero Section */}
       <div className="webdesign-hero">
         <div className="hero-content">
-          <h1>Web Design</h1>
+          <h1>Game Development Course</h1>
 
           <p>
-            Learn how to design professional, user-friendly, and fully
-            responsive websites from basic to advanced level with real-world
-            projects.
+            Master game development using modern tools and technologies.
+            Create immersive gaming experiences from concept to deployment.
           </p>
         </div>
       </div>
 
       {/* Skills Navigation */}
       <div className="webdesign-skills">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>Bootstrap</span>
-        <span>VS Code</span>
+        <span>Game Development Fundamentals</span>
+        <span>Unity Game Engine</span>
+        <span>2D & 3D Game Development</span>
+        <span>Game Physics & Animation</span>
+        <span>Game UI/UX Design</span>
       </div>
 
       {/* Image Section */}

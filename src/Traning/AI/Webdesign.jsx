@@ -1,6 +1,6 @@
 import React from "react";
 import "./Webdesign.css";
-import bannerImg from "../../img/webdesign.png";
+import bannerImg from "../../img/AI (Artificial Intelligence).png";
 
 const WebDesignSection = () => {
   return (
@@ -9,23 +9,22 @@ const WebDesignSection = () => {
       {/* Hero Section */}
       <div className="webdesign-hero">
         <div className="hero-content">
-          <h1>Web Design</h1>
+          <h1>Ai Course</h1>
 
           <p>
-            Learn how to design professional, user-friendly, and fully
-            responsive websites from basic to advanced level with real-world
-            projects.
+            Learn Artificial Intelligence and build smart systems that can analyze, learn, and make decisions.
+            Gain hands-on experience with Machine Learning, Deep Learning, and real-world AI projects.
           </p>
         </div>
       </div>
 
       {/* Skills Navigation */}
       <div className="webdesign-skills">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>Bootstrap</span>
-        <span>VS Code</span>
+        <span>Python</span>
+        <span>Machine Learning</span>
+        <span>Natural Language Processing</span>
+        <span>Generative AI</span>
+        <span>AI Project Development</span>
       </div>
 
       {/* Image Section */}

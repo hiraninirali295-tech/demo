@@ -1,8 +1,8 @@
 import React from "react";
 import { RiArrowRightUpLine } from "react-icons/ri";
 import "./Customapp.css"
-
-import mobileImg from "../../../img/43c1696b9fc2d654fb0381fa328074b2506346cd.jpg";
+import img1 from "../../../img/progress app.jpg"
+import mobileImg from "../../../img/progress app.jpg";
 
 const CustomApp = () => {
   return (
@@ -14,17 +14,17 @@ const CustomApp = () => {
           <div className="appdev-left">
 
             <h1 className="appdev-title">
-              Custom
+              Progressive   Web
               <br />
 
               <span className="appdev-hover-wrapper">
 
                 <span className="appdev-text-left">
-                  App
+                 App
                 </span>
 
                 <img
-                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=300"
+                  src={img1}
                   alt="user"
                   className="appdev-user-img"
                 />
@@ -38,8 +38,8 @@ const CustomApp = () => {
             </h1>
 
             <p className="appdev-desc">
-              We create secure, scalable, and user-friendly
-              applications tailored to your business goals.
+            Create secure and responsive Progressive Web Apps that combine the
+             best features of websites and mobile applications for greater user engagement.
             </p>
 
           </div>

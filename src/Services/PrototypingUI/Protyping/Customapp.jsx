@@ -1,8 +1,9 @@
 import React from "react";
 import { RiArrowRightUpLine } from "react-icons/ri";
-import "./Customapp.css"
+import "./Customapp.css";
+import img1 from "../../../img/Prototyping.jpg";
 
-import mobileImg from "../../../img/43c1696b9fc2d654fb0381fa328074b2506346cd.jpg";
+import mobileImg from "../../../img/Prototyping.jpg";
 
 const CustomApp = () => {
   return (
@@ -24,7 +25,7 @@ const CustomApp = () => {
                 </span>
 
                 <img
-                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=300"
+                  src={img1}
                   alt="user"
                   className="appdev-user-img"
                 />

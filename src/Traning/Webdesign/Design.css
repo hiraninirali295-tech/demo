@@ -1,0 +1,352 @@
+/* 
+
+.aitool-slider-section {
+  padding: 60px 0;
+  padding-left: 50px;
+}
+
+.aitool-slider-heading {
+  font-size: 70px;
+  font-weight: 600;
+  color: #1e1e1e;
+  margin-bottom: 30px;
+  padding-left: 25px;
+  letter-spacing: -1px;
+}
+
+.aitool-slider-box {
+  width: 35%;
+  background: #ffffff;
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  padding: 25px 0;
+  overflow: hidden;
+}
+
+.aitool-single-card {
+  width: 130px;
+  margin: 0 12px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.aitool-image-box {
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  background: #f2f2f2;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aitool-image-box img {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+}
+
+.aitool-card-title {
+  margin-top: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+
+
+
+@media (max-width: 992px) {
+  .aitool-slider-heading {
+    font-size: 40px;
+  }
+
+  .aitool-slider-box {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .aitool-slider-section {
+    padding-left: 20px;
+  }
+
+  .aitool-slider-heading {
+    font-size: 30px;
+    padding-left: 10px;
+  }
+
+  .aitool-slider-box {
+    width: 90%;
+  }
+
+  .aitool-single-card {
+    width: 110px;
+  }
+
+  .aitool-image-box {
+    width: 60px;
+    height: 60px;
+  }
+
+  .aitool-image-box img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .aitool-card-title {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .aitool-slider-section {
+    padding: 40px 15px;
+  }
+
+  .aitool-slider-heading {
+    font-size: 24px;
+    padding-left: 0;
+  }
+
+  .aitool-slider-box {
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .aitool-single-card {
+    width: 95px;
+    margin: 0 8px;
+  }
+
+  .aitool-image-box {
+    width: 55px;
+    height: 55px;
+  }
+
+  .aitool-image-box img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .aitool-card-title {
+    font-size: 13px;
+  }
+} */
+
+
+/*=============================
+      DESIGN TOOLS SLIDER
+=============================*/
+
+.aitool-slider-section{
+    width:100%;
+    padding:60px 40px;
+}
+
+.aitool-slider-heading{
+    font-size:70px;
+    font-weight:600;
+    color:#1E1E1E;
+    margin-bottom:35px;
+    letter-spacing:-1px;
+}
+
+.aitool-slider-box{
+    width:100%;
+    max-width:700px;
+    background:#fff;
+    border:1px solid #ECECEC;
+    border-radius:14px;
+    padding:25px 10px;
+    overflow:hidden;
+}
+
+.aitool-single-card{
+    text-align:center;
+    padding:10px;
+}
+
+.aitool-image-box{
+    width:72px;
+    height:72px;
+    background:#F3F3F3;
+    border-radius:18px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:auto;
+    transition:.3s;
+}
+
+.aitool-image-box img{
+    width:50px;
+    height:50px;
+    object-fit:contain;
+}
+
+.aitool-single-card:hover .aitool-image-box{
+    transform:translateY(-5px);
+}
+
+.aitool-card-title{
+    margin-top:12px;
+    font-size:15px;
+    font-weight:600;
+    color:#111;
+}
+
+
+/* slick spacing */
+
+.aitool-slider-box .slick-slide{
+    padding:0 8px;
+}
+
+.aitool-slider-box .slick-list{
+    margin:0 -8px;
+}
+
+
+
+/*=============================
+        Laptop
+=============================*/
+
+@media(max-width:1200px){
+
+    .aitool-slider-heading{
+        font-size:56px;
+    }
+
+    .aitool-slider-box{
+        max-width:650px;
+    }
+
+}
+
+
+
+/*=============================
+        Tablet
+=============================*/
+
+@media(max-width:992px){
+
+    .aitool-slider-section{
+        padding:50px 25px;
+    }
+
+    .aitool-slider-heading{
+        font-size:42px;
+    }
+
+    .aitool-slider-box{
+        width:100%;
+        max-width:100%;
+    }
+
+}
+
+
+
+/*=============================
+        Mobile
+=============================*/
+
+@media(max-width:768px){
+
+    .aitool-slider-section{
+        padding:40px 15px;
+    }
+
+    .aitool-slider-heading{
+        font-size:30px;
+        text-align:center;
+        margin-bottom:25px;
+    }
+
+    .aitool-slider-box{
+        width:100%;
+        padding:20px 5px;
+    }
+
+    .aitool-image-box{
+        width:60px;
+        height:60px;
+    }
+
+    .aitool-image-box img{
+        width:40px;
+        height:40px;
+    }
+
+    .aitool-card-title{
+        font-size:13px;
+    }
+
+}
+
+
+
+/*=============================
+      Small Mobile
+=============================*/
+
+@media(max-width:576px){
+
+    .aitool-slider-section{
+        padding:30px 10px;
+    }
+
+    .aitool-slider-heading{
+        font-size:24px;
+        line-height:1.3;
+    }
+
+    .aitool-slider-box{
+        border-radius:12px;
+        padding:18px 0;
+    }
+
+    .aitool-image-box{
+        width:55px;
+        height:55px;
+        border-radius:15px;
+    }
+
+    .aitool-image-box img{
+        width:34px;
+        height:34px;
+    }
+
+    .aitool-card-title{
+        font-size:12px;
+        margin-top:10px;
+    }
+
+}
+
+
+
+/*=============================
+      Extra Small Mobile
+=============================*/
+
+@media(max-width:420px){
+
+    .aitool-slider-heading{
+        font-size:22px;
+    }
+
+    .aitool-image-box{
+        width:50px;
+        height:50px;
+    }
+
+    .aitool-image-box img{
+        width:30px;
+        height:30px;
+    }
+
+}

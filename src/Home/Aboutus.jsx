@@ -234,8 +234,8 @@ function AboutSection() {
             {/* CENTER */}
             <div className="feature-center">
               <img src={img1} className="mainimg" />
-              <h3 className="aboutsection">Custom Digital Solutions</h3>
-              <p className="right-texts">
+              <h3 className="aboutsections">Custom Digital Solutions</h3>
+              <p className="right-textss">
                 We create scalable websites, web applications, and software <br />
                 tailored to your business goals, helping you stay <br />
                 ahead in a competitive market.

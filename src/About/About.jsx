@@ -17,20 +17,12 @@ function About() {
   return (
     <div className={darkMode ? "dark-mode" : "light-mode"}>
       <Aboutus />
-
       <Aboutcopy />
-
       <Countersection />
-
-      
-
       <Companytypesection />
       <Ourcompanyvalue />
-
       <Image />
-
       <Teamsection />
-
       <Img />
     </div>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Webdesign.css";
-import bannerImg from "../../img/webdesign.png";
+import bannerImg from "../../img/IOS Application Development.png";
 
 const WebDesignSection = () => {
   return (
@@ -12,20 +12,19 @@ const WebDesignSection = () => {
           <h1>Ios Application Development</h1>
 
           <p>
-            Learn how to design professional, user-friendly, and fully
-            responsive websites from basic to advanced level with real-world
-            projects.
+            Learn iOS app development with Swift and Xcode.
+            Build powerful applications for Apple devices.
           </p>
         </div>
       </div>
 
       {/* Skills Navigation */}
       <div className="webdesign-skills">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>Bootstrap</span>
-        <span>VS Code</span>
+        <span>Swift</span>
+        <span>Xcode</span>
+        <span>SwiftUI</span>
+        <span>UIKit</span>
+        <span>VIPER</span>
       </div>
 
       {/* Image Section */}

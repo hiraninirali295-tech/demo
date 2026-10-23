@@ -1,36 +1,36 @@
-import React, { useEffect, useRef ,useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Case.css";
 import { FiPlus } from "react-icons/fi";
 import { MdArrowOutward } from "react-icons/md";
 
 export default function CaseStudySection() {
-   const sectionRef = useRef(null);
-   const [opacity, setOpacity] = useState(0);
-useEffect(() => {
-  const handleScroll = () => {
-    const scrollTop = window.scrollY;
+  const sectionRef = useRef(null);
+  const [opacity, setOpacity] = useState(0);
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
 
-    const value = Math.min(scrollTop / 500, 1);
+      const value = Math.min(scrollTop / 500, 1);
 
-    setOpacity(value);
-  };
+      setOpacity(value);
+    };
 
-  window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
-  return () =>
-    window.removeEventListener("scroll", handleScroll);
-}, []);
+    return () =>
+      window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <>
-   <div className="case-heading-wrap">
+      <div className="case-heading-wrap">
         <div className="case-label">
-          Case Studies <span><MdArrowOutward/>
+          Case Studies <span><MdArrowOutward />
           </span>
         </div>
 
-        <div className="case-heading-row smoke-overlay"  style={{
-    opacity: opacity,
-  }} >
+        <div className="case-heading-row smoke-overlay" style={{
+          opacity: opacity,
+        }} >
           <h1>
             Case Studies<span className="slash">/</span>
           </h1>

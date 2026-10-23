@@ -3,7 +3,7 @@ import { RiArrowRightUpLine } from "react-icons/ri";
 import "./Customapp.css"
 
 import mobileImg from "../../../img/Custome.png";
-import img1 from "../../../img/App.jpg"
+import img1 from "../../../img/Custome.png"
 
 const CustomApp = () => {
   return (
@@ -39,8 +39,8 @@ const CustomApp = () => {
             </h1>
 
             <p className="appdev-desc">
-              We create secure, scalable, and user-friendly
-              applications tailored to your business goals.
+            We build secure, scalable, and high-performance custom applications tailored to your
+             business needs, ensuring seamless user experiences and long-term growth.
             </p>
 
           </div>

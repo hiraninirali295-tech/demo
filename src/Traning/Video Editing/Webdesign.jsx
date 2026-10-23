@@ -1,6 +1,6 @@
 import React from "react";
 import "./Webdesign.css";
-import bannerImg from "../../img/webdesign.png";
+import bannerImg from "../../img/Video Editing.png";
 
 const WebDesignSection = () => {
   return (
@@ -9,23 +9,22 @@ const WebDesignSection = () => {
       {/* Hero Section */}
       <div className="webdesign-hero">
         <div className="hero-content">
-          <h1>Video Editing</h1>
+          <h1>Video Editing Course</h1>
 
           <p>
-            Learn how to design professional, user-friendly, and fully
-            responsive websites from basic to advanced level with real-world
-            projects.
+            Transform raw footage into high-quality videos with industry-standard tools.
+            Gain hands-on experience through real-world editing projects.
           </p>
         </div>
       </div>
 
       {/* Skills Navigation */}
       <div className="webdesign-skills">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>Bootstrap</span>
-        <span>VS Code</span>
+        <span>Adobe Premiere Pro</span>
+        <span>Adobe After Effects</span>
+        <span>Typography & Animated Text</span>
+        <span>AI-Powered Video Editing Tools</span>
+        <span>Transitions & Visual Effects</span>
       </div>
 
       {/* Image Section */}

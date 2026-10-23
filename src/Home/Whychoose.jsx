@@ -106,7 +106,7 @@ function WhyChooseUs() {
               <MdArrowOutward className="why-icon" />
             </p> */}
 
-            <p className="why-tag" data-text="Why Choose Us">
+            {/* <p className="why-tag" data-text="Why Choose Us">
               <span className="why-text-wrapper">
                 <span className="why-text">Why Choose Us</span>
               </span>
@@ -115,11 +115,24 @@ function WhyChooseUs() {
                 <MdArrowOutward className="why-icon first-icon" />
                 <MdArrowOutward className="why-icon second-icon" />
               </span>
+            </p> */}
+
+            <p className="why-tag">
+              <span className="why-tag-text">Why Choose Us</span>
+              <span className="why-tag-text-hover">Why Choose Us</span>
+
+              <span className="why-tag-icon">
+                <MdArrowOutward />
+              </span>
+
+              <span className="why-tag-icon-hover">
+                <MdArrowOutward />
+              </span>
             </p>
 
             <h1 className="why-heading">
-              Transforming Students Into
-              Industry-Ready Professionals
+              Delivering Excellence Through
+              Innovation, Quality & Results
             </h1>
 
             <img src={img1} className="why-image-one" alt="" />
@@ -130,9 +143,7 @@ function WhyChooseUs() {
           <div className="col-lg-6 why-right-side">
 
             <p className="why-description">
-              At Grow Developer, we focus on practical learning, live projects,
-              and expert mentorship to help students gain real-world
-              skills and build successful careers in technology.
+              We deliver innovative, reliable, and result-driven solutions that help businesses grow and succeed.
             </p>
 
             <div className="why-grid-wrapper">
@@ -147,10 +158,11 @@ function WhyChooseUs() {
                     {countMillion.toFixed(0)} +
                   </span> */}
 
-                  <span className="big">
+                  {/* <span className="big">
                     {countMillion.toFixed(0)}
                     <FaPlus className="plus-icon ms-1" />
-                  </span>
+                  </span> */}
+                  <span className="bigs"> Customized Solutions</span>
 
                   {/* <span className="why-plus-icon">
                     +
@@ -171,9 +183,11 @@ function WhyChooseUs() {
                     </div>
 
                     <div className="why-card-description">
-                      Successfully guiding students
-                      toward rewarding careers in
-                      technology.
+                      We understand that every business
+                      is different. Our team creates
+                      customized digital solutions that
+                      align with your goals, industry
+                      requirements, and growth strategy.
                     </div>
 
                   </div>
@@ -193,9 +207,10 @@ function WhyChooseUs() {
                     </div>
 
                     <div className="why-card-description">
-                      Gain practical experience by
-                      working on real-world projects and
-                      industry-based assignments.
+                      Our structured workflow and
+                      experienced team ensure deadlines
+                      are met while maintaining exceptional
+                      standards.
                     </div>
 
                   </div>
@@ -204,9 +219,11 @@ function WhyChooseUs() {
 
                 <div className="why-box why-number-box why-small-number">
 
-                  <span className="big">
+                  {/* <span className="big">
                     {Math.floor(countK)}
-                  </span>
+                  </span> */}
+
+                  <span className="bigs">Timely Project Delivery</span>
 
                   <span className="why-plus-icon">
                     <FaPlus />

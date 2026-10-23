@@ -1,6 +1,6 @@
 import React from "react";
 import "./Webdesign.css";
-import bannerImg from "../../img/webdesign.png";
+import bannerImg from "../../img/UIUX Design.png";
 
 const WebDesignSection = () => {
   return (
@@ -12,20 +12,19 @@ const WebDesignSection = () => {
           <h1>Ui/Ux Design</h1>
 
           <p>
-            Learn how to design professional, user-friendly, and fully
-            responsive websites from basic to advanced level with real-world
-            projects.
+            Design intuitive digital experiences with a user-first approach.
+            Gain real-world experience through industry-focused projects.
           </p>
         </div>
       </div>
 
       {/* Skills Navigation */}
       <div className="webdesign-skills">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>Bootstrap</span>
-        <span>VS Code</span>
+        <span>Figma</span>
+        <span>Adobe XD</span>
+        <span>Sketch</span>
+        <span>Miro</span>
+        <span>Accessibility Design</span>
       </div>
 
       {/* Image Section */}

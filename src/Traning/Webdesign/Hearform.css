@@ -1,0 +1,393 @@
+/* .student-section {
+  padding: 90px 0;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+.student-heading {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 55px;
+  color: #111;
+  position: relative;
+  z-index: 2;
+}
+
+.slick-slide{
+    padding:0 10px;
+}
+
+.student-card{
+    position:relative;
+    z-index:2;
+}
+
+.video-box{
+    width:100%;
+    height:540px;
+    background:#333;
+    border-radius:10px;
+    overflow:hidden;
+    transition:.4s;
+}
+
+.video-box video{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.student-card:hover .video-box{
+    transform:translateY(-8px);
+    box-shadow:0 18px 45px rgba(0,0,0,.18);
+}
+
+.student-card h4{
+    margin-top:18px;
+    font-size:28px;
+    font-weight:700;
+    color:#111;
+}
+
+.student-card p{
+    margin-top:5px;
+    color:#555;
+    font-size:18px;
+}
+
+
+
+.slick-prev,
+.slick-next{
+    display:none !important;
+}
+
+
+
+@media(max-width:991px){
+
+.student-heading{
+    font-size:38px;
+}
+
+.video-box{
+    height:450px;
+}
+
+.student-card h4{
+    font-size:24px;
+}
+
+}
+
+
+
+@media(max-width:767px){
+
+.student-section{
+    padding:60px 0;
+}
+
+.student-heading{
+    font-size:32px;
+    margin-bottom:35px;
+}
+
+.video-box{
+    height:420px;
+}
+
+.student-card h4{
+    font-size:22px;
+}
+
+.student-card p{
+    font-size:15px;
+}
+
+}
+
+
+
+@media(max-width:575px){
+
+.student-heading{
+    font-size:28px;
+}
+
+.video-box{
+    height:360px;
+}
+
+.student-card h4{
+    font-size:20px;
+}
+
+.student-card p{
+    font-size:14px;
+}
+
+.slick-slide{
+    padding:0 6px;
+}
+
+} */
+
+.student-section {
+  width: 100%;
+  /* background: #fff; */
+  padding: 90px 0;
+  overflow: hidden;
+  padding-left: 50px;
+  
+}
+
+/* Full Width Container */
+
+.student-container {
+  width: 70%;
+  max-width: 1720px;
+  /* margin: auto; */
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.student-heading {
+  font-size: 62px;
+  font-weight: 600;
+  color:#1E1E1E;
+  margin-bottom: 55px;
+  line-height: 1.2;
+  letter-spacing: -2px;
+}
+
+/* Slider */
+
+.slick-list {
+  margin: 0 -10px;
+}
+
+.slick-slide {
+  padding: 0 10px;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-slide > div {
+  height: 100%;
+}
+
+.student-card {
+  width: 100%;
+}
+
+.video-box {
+  width: 100%;
+  height: 690px;
+  background: #000000 !important;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: .4s;
+}
+
+.video-box video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* .student-card:hover .video-box {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(0,0,0,.18);
+} */
+
+.student-card h4 {
+  font-size: 30px;
+  font-weight: 600;
+  color:#000000;
+  margin-top: 18px;
+}
+
+.student-card p {
+  font-size: 19px;
+  color:#000000;
+  margin-top: 6px;
+  font-weight: 500;
+}
+
+.slick-prev,
+.slick-next {
+  display: none !important;
+}
+
+/* ---------------- Large Screen ---------------- */
+
+@media (max-width:1600px){
+
+.student-container{
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.video-box{
+    height:500px;
+}
+
+}
+
+/* ---------------- Laptop ---------------- */
+
+@media (max-width:1400px){
+
+.student-heading{
+    font-size:46px;
+}
+
+.video-box{
+    height:470px;
+}
+
+}
+
+/* ---------------- 1200 ---------------- */
+
+@media (max-width:1200px){
+
+.student-container{
+    padding-left:18px;
+    padding-right:18px;
+}
+
+.student-heading{
+    font-size:42px;
+}
+
+.video-box{
+    height:430px;
+}
+
+.student-card h4{
+    font-size:25px;
+}
+
+}
+
+/* ---------------- Tablet ---------------- */
+
+@media (max-width:991px){
+
+.student-section{
+    padding:70px 0;
+}
+
+.student-container{
+    padding-left:16px;
+    padding-right:16px;
+}
+
+.student-heading{
+    font-size:36px;
+    margin-bottom:40px;
+}
+
+.video-box{
+    height:420px;
+}
+
+.student-card h4{
+    font-size:23px;
+}
+
+.student-card p{
+    font-size:16px;
+}
+
+}
+
+/* ---------------- Mobile ---------------- */
+
+@media (max-width:767px){
+
+.student-section{
+    padding:60px 0;
+}
+
+.student-container{
+    padding-left:12px;
+    padding-right:12px;
+    width: 100%;
+}
+
+
+.student-heading{
+    font-size:30px;
+    margin-bottom:35px;
+}
+
+.video-box{
+    height:250px;
+}
+
+.student-card h4{
+    font-size:22px;
+}
+
+.student-card p{
+    font-size:15px;
+}
+
+.slick-list{
+    margin:0 -6px;
+}
+
+.slick-slide{
+    padding:0 6px;
+}
+.student-section{
+    padding-left: 30px;
+}
+
+}
+
+/* ---------------- Small Mobile ---------------- */
+
+@media (max-width:575px){
+
+.student-container{
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.student-heading{
+    font-size:26px;
+    margin-bottom:30px;
+}
+
+.video-box{
+    /* height:340px; */
+    border-radius:12px;
+}
+
+.student-card h4{
+    font-size:12px;
+}
+
+.student-card p{
+    font-size:12px;
+}
+
+}
+
+.dark-mode .student-card h4{
+    color: #FFFFFF;
+}
+.dark-mode .student-card p{
+    color: #FFFFFF;
+}

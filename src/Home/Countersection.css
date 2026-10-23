@@ -536,7 +536,7 @@
 
 
 
-.creative-side-text .bottom-side
+
 
 
 
@@ -843,13 +843,11 @@
     padding:60px 20px;
   }
 
-  .creative-heading-area h1{
-    font-size:42px;
-    line-height:1.2;
-  }
+ 
 
   .creative-description-box{
     max-width:100%;
+    padding-top: 30px;
   }
 
   .creative-middle-layout{
@@ -900,6 +898,7 @@
   .creative-count-box h2{
     font-size:50px;
   }
+ 
 
 }
 
@@ -914,6 +913,8 @@
   .creative-heading-area h1{
     font-size:30px;
     letter-spacing:-1px;
+    justify-content: center;
+    text-align: center;
   }
 
   .creative-side-text{

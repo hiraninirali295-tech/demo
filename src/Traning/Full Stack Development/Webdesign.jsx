@@ -1,6 +1,6 @@
 import React from "react";
 import "./Webdesign.css";
-import bannerImg from "../../img/webdesign.png";
+import bannerImg from "../../img/Full stack.png";
 
 const WebDesignSection = () => {
   return (
@@ -12,9 +12,8 @@ const WebDesignSection = () => {
           <h1>Full Stack Development</h1>
 
           <p>
-            Learn how to design professional, user-friendly, and fully
-            responsive websites from basic to advanced level with real-world
-            projects.
+            Learn Full Stack Development from basic to advanced level.
+            Build dynamic and responsive web applications.
           </p>
         </div>
       </div>
@@ -25,7 +24,7 @@ const WebDesignSection = () => {
         <span>CSS</span>
         <span>JavaScript</span>
         <span>Bootstrap</span>
-        <span>VS Code</span>
+        <span>Git & GitHub</span>
       </div>
 
       {/* Image Section */}

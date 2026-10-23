@@ -1,152 +1,143 @@
-import React, { useRef } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-
-import img1 from "../img/test-4.png";
-import img2 from "../img/test-4.png";
-import img3 from "../img/test-4.png";
-import img4 from "../img/test-4.png";
-import { GoArrowUpRight } from "react-icons/go";
-import { useNavigate } from "react-router-dom";
+import React from "react";
 import "./Teamsection.css";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import { MdArrowOutward } from "react-icons/md";
+import { GoArrowUpRight } from "react-icons/go";
 
-const TeamSlider = () => {
-  const navigate = useNavigate();
-  const sliderRef = useRef(null);
+import img1 from "../img/test-1.png";
+import img2 from "../img/test-1.png";
+import img3 from "../img/test-1.png";
+import img4 from "../img/test-1.png";
+import img5 from "../img/test-1.png";
+import img6 from "../img/test-1.png";
 
-  const nextSlide = () => {
-    const cardWidth = sliderRef.current.offsetWidth / 4;
-    sliderRef.current.scrollBy({
-      left: cardWidth,
-      behavior: "smooth",
-    });
-  };
+const teamMembers = [
+  {
+    image: img1,
+    name: "Jaydip Italiya",
+    role: "Chief Executive Officer (CEO)",
+  },
+  {
+    image: img2,
+    name: "Utsav Italiya",
+    role: "Chief Operating Officer (COO)",
+  },
+  {
+    image: img3,
+    name: "Jodhani Kaksha",
+    role: "UI UX & Graphic Designer",
+  },
+  {
+    image: img4,
+    name: "Amit Agravat",
+    role: "React JS Developer",
+  },
+  {
+    image: img5,
+    name: "Nirali Hirali",
+    role: "Web Developer",
+  },
+  {
+    image: img6,
+    name: "Jay Patel",
+    role: "Flutter Developer",
+  },
+];
 
-  const prevSlide = () => {
-    const cardWidth = sliderRef.current.offsetWidth / 4;
-    sliderRef.current.scrollBy({
-      left: -cardWidth,
-      behavior: "smooth",
-    });
-  };
-
-  const team = [
-    {
-      img: img1,
-      name: "CEO",
-      role: "Chief Executive Officer",
-      onClick: () => navigate("/ceopage"),
-    },
-    {
-      img: img2,
-      name: "COO",
-      role: "Chief Operating Officer",
-      onClick: () => navigate("/coopage"),
-    },
-    {
-      img: img3,
-      name: "Designer",
-      role: "UI/UX Designer",
-    },
-    {
-      img: img4,
-      name: "React Dev",
-      role: "React Developer",
-    },
-    {
-      img: img4,
-      name: "Web Dev",
-      role: "Web Developer",
-    },
-    {
-      img: img4,
-      name: "Web Dev",
-      role: "Web Developer",
-    },
-    {
-      img: img4,
-      name: "Web Dev",
-      role: "Web Developer",
-    },
-    {
-      img: img4,
-      name: "Web Dev",
-      role: "Web Developer",
-    },
-  ];
-
+function TeamSection() {
   return (
-    <>
-      <section className="visionaries-section">
-        <div className="container-fluid">
-          <div className="visionaries-wrapper">
-            {/* LEFT */}
-            <div className="visionaries-left">
-              {/* <span className="team-label">
-                Meet Our Team <MdArrowOutward/>
-              </span> */}
+    <section className="team-section">
+      <div className="container-fluid">
 
-              <span className="team-label" data-text="Meet Our Team">
-                <span className="team-label-inner">Meet Our Team</span>
-                <MdArrowOutward className="team-icon" />
+        <div className="team-top">
+
+          <div className="team-left">
+            {/* <span className="team-tag">
+              Meet Our Team <GoArrowUpRight />
+            </span> */}
+            <span className="team-tag">
+
+              <span className="team-tag-wrap">
+                <span className="team-tag-text">Meet Our Team</span>
+                <span className="team-tag-text-hover">Meet Our Team</span>
               </span>
 
-              <h2 className="teamsection">
-                Behind the <br />
-                Visionaries
-              </h2>
-            </div>
+              <span className="team-tag-icon-wrap">
+                <span className="team-tag-icon">
+                  <GoArrowUpRight />
+                </span>
 
-            {/* RIGHT */}
-            <div className="visionaries-right">
-              <p>
-                Creative experts designing meaningful digital experiences that
-                help ambitious brands grow faster and lead their markets.
-              </p>
+                <span className="team-tag-icon-hover">
+                  <GoArrowUpRight />
+                </span>
+              </span>
 
-              <button className="join-btn">
-                Join Our Team <GoArrowUpRight />
-              </button>
-            </div>
+            </span>
+
+            <h1 className="team-title">
+              The Minds Behind
+              <br />
+              Every Digital Success
+            </h1>
           </div>
+
+          <div className="team-right">
+            <p className="team-description">
+              Our talented team combines creativity,<br />
+              technology, and innovation to transform <br />
+              ideas into powerful digital solutions.
+            </p>
+
+            {/* <button className="join-btn">
+              Join Our Team <GoArrowUpRight />
+            </button> */}
+
+            <button className="join-btn">
+
+              <span className="join-text-wrap">
+                <span className="join-text">Join Our Team</span>
+                <span className="join-text-hover">Join Our Team</span>
+              </span>
+
+              <span className="join-icon-wrap">
+                <span className="join-icon">
+                  <GoArrowUpRight />
+                </span>
+
+                <span className="join-icon-hover">
+                  <GoArrowUpRight />
+                </span>
+              </span>
+
+            </button>
+          </div>
+
         </div>
-      </section>
-      <section className="team-section">
-        <div className="container-fluid">
-          <div className="row header-row align-items-center">
-            <div className="col-lg-6"></div>
 
-            <div className="col-lg-6 text-lg-end mt-4 mt-lg-0"></div>
-          </div>
+        <div className="team-grid">
+          {teamMembers.map((item, index) => (
+            <div
+              key={index}
+              className={`team-card ${index % 2 === 0 ? "bottom-card" : "top-card"
+                }`}
+            >
+              <img src={item.image} alt={item.name} />
 
-          <div className="custom-slider" ref={sliderRef}>
-            {team.concat(team).map((item, index) => (
-              <div
-                className={`team-card ${index % 2 === 0 ? "up" : "down"}`}
-                key={index}
-                onClick={item.onClick}
-                style={{ cursor: item.onClick ? "pointer" : "default" }}
-              >
-                <div className="team-img">
-                  <img src={item.img} alt="" />
+              <div className="card-overlay">
+                <div className="card-arrow">
+                  <GoArrowUpRight />
                 </div>
 
-                <div className="overlay">
-                  <h4>{item.name}</h4>
+                <div className="member-info">
+                  <h5>{item.name}</h5>
                   <p>{item.role}</p>
                 </div>
-
-                {/* ARROW */}
-                <div className="top-arrow"><MdArrowOutward /></div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
-      </section>
-    </>
+
+      </div>
+    </section>
   );
-};
+}
 
-export default TeamSlider;
-
+export default TeamSection;

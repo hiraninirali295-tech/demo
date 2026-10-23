@@ -28,14 +28,14 @@
 }
 
 .appdev-title {
-    font-size: 75px;
+    font-size: 72px;
     line-height: 0.98;
     font-weight: 700;
     color: #1E1E1E;
     letter-spacing: -4px;
     margin-bottom: 30px;
     animation: textUp 1s ease;
-    font-family: "DM Sans", sans-serif;
+   
 }
 
 .appdev-hover-wrapper {

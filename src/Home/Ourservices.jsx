@@ -30,8 +30,20 @@ export default function ServicesSection() {
           <MdArrowOutward className="icon" />
         </div> */}
 
-        <div className="left-text" data-text="Our Services">
+        {/* <div className="left-text" data-text="Our Services">
           <span className="text-inner">Our Services</span>
+
+          <span className="icon">
+            <MdArrowOutward className="icon-first" />
+            <MdArrowOutward className="icon-second" />
+          </span>
+        </div> */}
+
+        <div className="left-text">
+          <div className="text-wrapper">
+            <span className="text-first">Our Services</span>
+            <span className="text-second">Our Services</span>
+          </div>
 
           <span className="icon">
             <MdArrowOutward className="icon-first" />
@@ -100,15 +112,20 @@ export default function ServicesSection() {
             Get a Free Quote <MdArrowOutward />
           </button> */}
 
-          <button className="hero-button">
+           <button className="hero-button">
             <span className="btn-text-wrap">
               <span className="btn-text">Get a Free Quote</span>
               <span className="btn-text-hover">Get a Free Quote</span>
             </span>
 
-            <span className="btn-icon-wrap">
-              <MdArrowOutward className="btn-icon btn-icon-first" />
-              <MdArrowOutward className="btn-icon btn-icon-second" />
+            <span className="about-icon-wrapper">
+              <span className="about-icon">
+                <MdArrowOutward />
+              </span>
+
+              <span className="about-icon-hover">
+                <MdArrowOutward />
+              </span>
             </span>
           </button>
         </div>

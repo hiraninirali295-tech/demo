@@ -29,7 +29,7 @@ import Productdesign from "./Services/ProductDevelopment/ProductDesign/Productde
 import Mvpimprovent from "./Services/ProductDevelopment/MVPImprovement/Mvpimprovent.jsx"
 import Mvpdevelopment from "./Services/ProductDevelopment/MVPDevelopment/Mvpdevelopment.jsx"
 import Productlaunch from "./Services/ProductDevelopment/ProductLaunchSupport/Productlaunch.jsx"
-import protypingmain from "./Services/PrototypingUI/Protyping/Protypingmain.jsx"
+import Protypingmain from "./Services/PrototypingUI/Protyping/Protypingmain.jsx"
 import Uidevelopment from "./Services/PrototypingUI/UI Development/UIdevelopment.jsx"
 import Uxdevelopment from "./Services/PrototypingUI/UX Development/Uxdevelopment.jsx"
 import Manualtestingmain from "./Services/QualityAssurance/ManualTesting/Manualtestingmain.jsx"
@@ -185,7 +185,7 @@ function App() {
               <Route path="/mvpdevelopment" element={<Mvpdevelopment />} />
               <Route path="/productlaunch" element={<Productlaunch />} />
               {/* ==========================Protyping================================== */}
-              <Route path="/prototypingmain" element={<prototypingmain />} />
+              <Route path="/prototypingmain" element={<Protypingmain />} />
               <Route path="/uidevelopment" element={<Uidevelopment />} />
               <Route path="/uxdevelopment" element={<Uxdevelopment />} />
               {/* ===============================Quality Assurance===================================== */}

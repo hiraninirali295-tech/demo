@@ -1,7 +1,7 @@
-.tools-section {
+/* .tools-section {
   width: 100%;
   min-height: 100vh;
-  /* background: #f3f3f3; */
+
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -338,4 +338,334 @@
   .tools-section{
      min-height: 40vh
   }
+}
+
+ */
+
+
+.tools-section {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.tools-container {
+  width: 100%;
+  max-width: 1500px;
+  height: 820px;
+  position: relative;
+  margin: auto;
+}
+
+/* Center Text */
+
+.tools-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  text-align: center;
+}
+
+.tools-content h1 {
+  font-size: 86px;
+  font-weight: 700;
+  color: #1E1E1E;
+  line-height: 1;
+}
+
+.tools-content p {
+  font-size: 28px;
+  font-weight: 500;
+  color: #1E1E1E;
+}
+
+/* Floating Card */
+
+/* .floating-card {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: float 4s ease-in-out infinite;
+}
+
+.floating-img {
+  width: 88px;
+  height: 88px;
+  background: #fff;
+  border: 1.5px solid #979797;
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.floating-img img {
+  width: 58%;
+  height: 58%;
+  object-fit: contain;
+}
+
+.tool-text {
+  margin-top: 10px !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  color: #1E1E1E !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+  z-index:201;
+} */
+
+
+.floating-card {
+  position: absolute;
+  animation: float 3s ease-in-out infinite;
+}
+
+.floating-img {
+  width: 88px;
+  height: 88px;
+  background: #fff;
+  border: 1.5px solid #979797;
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.floating-img img {
+  width: 58%;
+  height: 58%;
+  object-fit: contain;
+}
+
+.tool-text {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 40%;
+  transform: translateX(-50%);
+  width: max-content;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1E1E1E;
+  white-space: nowrap;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/* Position */
+
+.img1 {
+  top: 11%;
+  left: 2%;
+}
+
+.img2 {
+  top: 25%;
+  left: 19%;
+}
+
+.img3 {
+  top: 24%;
+  right: 34%;
+}
+
+.img4 {
+  top: 21%;
+  right: 13%;
+}
+
+.img5 {
+  top: 50%;
+  left: 8%;
+}
+
+.img6 {
+  top: 68%;
+  left: 25%;
+}
+
+.img7 {
+  bottom: 22%;
+  right: 31%;
+}
+
+.img8 {
+  bottom: 35%;
+  right: 7%;
+}
+
+/* Animation */
+
+@keyframes float {
+
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+
+}
+
+/* Dark Mode */
+
+.dark-mode .floating-img {
+  background: #000;
+  border-color: #373737;
+}
+
+.dark-mode .tool-text,
+.dark-mode .tools-content h1,
+.dark-mode .tools-content p {
+  color: #fff;
+}
+
+/* Responsive */
+
+@media(max-width:1200px) {
+
+  .tools-content h1 {
+    font-size: 70px;
+  }
+
+  .tools-content p {
+    font-size: 22px;
+  }
+
+}
+
+@media(max-width:992px) {
+
+  .tools-container {
+    height: 700px;
+  }
+
+  .tools-content h1 {
+    font-size: 56px;
+  }
+
+  .floating-img {
+    width: 75px;
+    height: 75px;
+  }
+
+  .tool-text {
+    font-size: 13px;
+  }
+
+}
+
+@media(max-width:768px) {
+
+  .tools-container {
+    height: 520px;
+  }
+
+  .tools-content h1 {
+    font-size: 38px;
+  }
+
+  .tools-content p {
+    font-size: 15px;
+  }
+
+  .floating-img {
+    width: 58px;
+    height: 58px;
+    border-radius: 12px;
+  }
+
+  .tool-text {
+    font-size: 11px;
+    margin-top: 6px;
+  }
+
+  .img1 {
+    top: 8%;
+    left: 2%;
+  }
+
+  .img2 {
+    top: 20%;
+    left: 15%;
+  }
+
+  .img3 {
+    top: 20%;
+    right: 18%;
+  }
+
+  .img4 {
+    top: 8%;
+    right: 2%;
+  }
+
+  .img5 {
+    top: 52%;
+    left: 2%;
+  }
+
+  .img6 {
+    top: 72%;
+    left: 16%;
+  }
+
+  .img7 {
+    bottom: 14%;
+    right: 18%;
+  }
+
+  .img8 {
+    bottom: 24%;
+    right: 2%;
+  }
+
+}
+
+@media(max-width:480px) {
+
+  .tools-section {
+    min-height: 45vh;
+  }
+
+  .tools-container {
+    height: 430px;
+  }
+
+  .tools-content h1 {
+    font-size: 28px;
+  }
+
+  .tools-content p {
+    font-size: 13px;
+  }
+
+  .floating-img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .tool-text {
+    font-size: 10px;
+  }
+
 }

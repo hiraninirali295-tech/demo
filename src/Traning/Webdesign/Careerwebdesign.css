@@ -1,0 +1,415 @@
+.career-section {
+  width: 100%;
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+.career-container {
+  width: 100%;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.career-title {
+  text-align: left;
+}
+
+.career-title h2 {
+  font-size: 64px;
+  font-weight: 600;
+  color:#1E1E1E;
+  margin-bottom: 40px;
+  letter-spacing: -1px;
+}
+
+.career-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 50%;
+  height:auto;
+}
+
+.career-card {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.career-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 32px;
+  cursor: pointer;
+}
+
+.career-header h4 {
+  margin: 0;
+  font-size: 27px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.icon-circle {
+  width: 38px;
+  height: 38px;
+  min-width: 38px;
+  border-radius: 50%;
+  background: #355efc;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.career-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.career-content.show {
+  max-height: 500px;
+}
+
+.career-content ul {
+  padding: 0 35px 30px 55px;
+  margin: 0;
+}
+
+.career-content li {
+  color: #585959;
+  font-size: 23px;
+  line-height: 2;
+}
+
+/* Button */
+
+.enroll-btn {
+  margin-top: 35px;
+  border: none;
+  background: #1e1e1e;
+  color: #ffffff;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  height: 51px;
+  width: 177px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.btn-text-wrap {
+  position: relative;
+  height: 24px;
+  overflow: hidden;
+}
+
+.btn-text,
+.btn-text-hover {
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.btn-text-hover {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  white-space: nowrap;
+}
+
+.enroll-btn:hover .btn-text {
+  transform: translateY(-100%);
+}
+
+.enroll-btn:hover .btn-text-hover {
+  transform: translateY(-100%);
+}
+
+.btn-icon-wrap {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+}
+
+.btn-icon,
+.btn-icon-hover {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.btn-icon-hover {
+  transform: translateY(100%);
+}
+
+.enroll-btn:hover .btn-icon {
+  transform: translateY(-100%);
+}
+
+.enroll-btn:hover .btn-icon-hover {
+  transform: translateY(0);
+}
+
+
+/* @media (max-width: 991px) {
+  .career-container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .career-title h2 {
+    font-size: 48px;
+  }
+
+  .career-header h4 {
+    font-size: 24px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .career-section {
+    padding: 70px 0;
+  }
+
+  .career-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .career-title h2 {
+    font-size: 38px;
+  }
+
+ 
+
+  .career-header h4 {
+    font-size: 18px;
+    width:100% !important;
+    line-height: 1.5;
+  }
+  .career-header{
+    width: 100% !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .career-content ul {
+    padding: 0 20px 20px 40px;
+  }
+
+  .career-content li {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .icon-circle {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+  }
+
+  .enroll-btn {
+    width: 60%;
+  }
+}
+
+@media (max-width: 576px) {
+  .career-title h2 {
+    font-size: 30px;
+  }
+
+  .career-header h4 {
+    font-size: 16px;
+  }
+
+  .enroll-btn {
+    width: 100%;
+  }
+} */
+
+
+/* =========================
+   Tablet (991px)
+========================= */
+
+@media (max-width:991px){
+
+  .career-section{
+    padding:70px 0;
+  }
+
+  .career-container{
+    padding:0 25px;
+  }
+
+  .career-accordion{
+    width:100%;
+  }
+
+  .career-title h2{
+    font-size:46px;
+  }
+
+  .career-header{
+    padding:22px 24px;
+  }
+
+  .career-header h4{
+    font-size:22px;
+  }
+
+  .career-content li{
+    font-size:18px;
+  }
+
+}
+
+
+/* =========================
+   Mobile (768px)
+========================= */
+
+@media (max-width:768px){
+
+  .career-section{
+    padding:60px 0;
+  }
+
+  .career-container{
+    width:100%;
+    padding:0 16px;
+  }
+
+  .career-accordion{
+    width:100%;
+    gap:15px;
+  }
+
+  .career-card{
+    width:100%;
+  }
+
+  .career-header{
+    width:100%;
+    padding:18px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:12px;
+  }
+
+  .career-header h4{
+    flex:1;
+    margin:0;
+    font-size:18px;
+    line-height:1.5;
+    text-align:left;
+  }
+
+  .icon-circle{
+    width:34px;
+    height:34px;
+    min-width:34px;
+  }
+
+  .career-content ul{
+    padding:0 18px 20px 35px;
+  }
+
+  .career-content li{
+    font-size:15px;
+    line-height:1.8;
+  }
+
+  .enroll-btn{
+    width:50% !important;
+    margin-top:25px;
+  }
+
+}
+
+
+/* =========================
+   Small Mobile (576px)
+========================= */
+
+@media (max-width:576px){
+
+  .career-container{
+    padding:0 12px;
+  }
+
+  .career-title{
+    text-align:center;
+  }
+
+  .career-title h2{
+    font-size:30px;
+    margin-bottom:25px;
+  }
+
+  .career-header{
+    padding:16px;
+  }
+
+  .career-header h4{
+    font-size:16px;
+  }
+
+  .icon-circle{
+    width:30px;
+    height:30px;
+    min-width:30px;
+    font-size:10px;
+  }
+
+  .career-content ul{
+    padding:0 15px 18px 28px;
+  }
+
+  .career-content li{
+    font-size:14px;
+  }
+
+  .enroll-btn{
+    width:100%;
+    height:48px;
+    font-size:15px;
+  }
+
+}
+
+
+.dark-mode .career-title h2 {
+  color: #ffffff;
+}
+
+.dark-mode .career-card {
+  background-color: #161616;
+}
+
+.dark-mode .career-header h4,
+.dark-mode .career-content li {
+  color: #ffffff;
+}
+
+.dark-mode .enroll-btn {
+  background-color: #ffffff;
+  color: #000000;
+}

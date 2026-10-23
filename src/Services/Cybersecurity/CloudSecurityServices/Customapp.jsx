@@ -1,8 +1,9 @@
 import React from "react";
 import { RiArrowRightUpLine } from "react-icons/ri";
-import "./Customapp.css"
+import "./Customapp.css";
+import img1 from "../../../img/Cloud Security Services.jpg";
 
-import mobileImg from "../../../img/43c1696b9fc2d654fb0381fa328074b2506346cd.jpg";
+import mobileImg from "../../../img/Cloud Security Services.jpg";
 
 const CustomApp = () => {
   return (
@@ -14,23 +15,23 @@ const CustomApp = () => {
           <div className="appdev-left">
 
             <h1 className="appdev-title">
-              Custom
+              Cloud  
               <br />
 
               <span className="appdev-hover-wrapper">
 
                 <span className="appdev-text-left">
-                  App
+                 Security
                 </span>
 
                 <img
-                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=300"
+                  src={img1}
                   alt="user"
                   className="appdev-user-img"
                 />
 
                 <span className="appdev-text-right">
-                  Development
+                 Services
                 </span>
 
               </span>
@@ -38,8 +39,8 @@ const CustomApp = () => {
             </h1>
 
             <p className="appdev-desc">
-              We create secure, scalable, and user-friendly
-              applications tailored to your business goals.
+             Enhance cloud security by implementing robust access controls, data protection
+              and proactive threat prevention to keep your business safe and compliant.
             </p>
 
           </div>

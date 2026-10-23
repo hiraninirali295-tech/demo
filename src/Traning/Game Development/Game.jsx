@@ -1,10 +1,10 @@
 import React from 'react';
-import Webdesign from "../Sales/Webdesign";
-import Aboutwebdesign from "../Sales/Aboutwebdesign";
-import Designtools from "../Sales/Designtools";
-import Image from "../Sales/Image";
-import Studenttestimonal from '../Sales/Studenttesmonail';
-import Contact from "../Sales/Contact";
+import Webdesign from "../Game Development/Webdesign";
+import Aboutwebdesign from "../Game Development/Aboutwebdesign";
+import Designtools from "../Game Development/Designtools";
+import Image from "../Game Development/Image";
+import Studenttestimonal from '../Game Development/Studenttesmonail';
+import Contact from "../Game Development/Contact";
 
 function Game() {
   return (

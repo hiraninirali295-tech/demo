@@ -1,6 +1,6 @@
 import React from "react";
 import "./Webdesign.css";
-import bannerImg from "../../img/webdesign.png";
+import bannerImg from "../../img/Flutter Application Development.png";
 
 const WebDesignSection = () => {
   return (
@@ -12,20 +12,19 @@ const WebDesignSection = () => {
           <h1>Flutter Application Development</h1>
 
           <p>
-            Learn how to design professional, user-friendly, and fully
-            responsive websites from basic to advanced level with real-world
-            projects.
+            Master Flutter development from basic to advanced level.
+            Build fast, responsive, and modern mobile applications.
           </p>
         </div>
       </div>
 
       {/* Skills Navigation */}
       <div className="webdesign-skills">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>Bootstrap</span>
-        <span>VS Code</span>
+        <span>Dart</span>
+        <span>Flutter</span>
+        <span>Flutter SDK</span>
+        <span>Android Studio</span>
+        <span>Firebase</span>
       </div>
 
       {/* Image Section */}

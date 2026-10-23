@@ -46,7 +46,7 @@ export default function AboutUs() {
           </p> */}
           <p className="small-text">
 
-            <span className="small-text-wrap">
+            {/* <span className="small-text-wrap">
               <span className="small-text-titles">Built For Growth</span>
               <span className="small-text-titles-hover">Built For Growth</span>
             </span>
@@ -59,7 +59,24 @@ export default function AboutUs() {
               <span className="small-text-icon-hover">
                 <MdArrowOutward className="header-arrow" />
               </span>
-            </span>
+            </span> */}
+
+            <div className="small-textss">
+              <span className="small-text-wrap">
+                <span className="small-text-titles">Built For Growth</span>
+                <span className="small-text-titles-hover">Built For Growth</span>
+              </span>
+
+              <span className="small-text-icon-wrap">
+                <span className="small-text-icon">
+                  <MdArrowOutward className="header-arrow" />
+                </span>
+
+                <span className="small-text-icon-hover">
+                  <MdArrowOutward className="header-arrow" />
+                </span>
+              </span>
+            </div>
 
           </p>
 

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Webdesign.css";
-import bannerImg from "../../img/webdesign.png";
+import bannerImg from "../../img/Cyber Security.png";
 
 const WebDesignSection = () => {
   return (
@@ -9,23 +9,22 @@ const WebDesignSection = () => {
       {/* Hero Section */}
       <div className="webdesign-hero">
         <div className="hero-content">
-          <h1>Cyber</h1>
+          <h1>Cyber Course</h1>
 
           <p>
-            Learn how to design professional, user-friendly, and fully
-            responsive websites from basic to advanced level with real-world
-            projects.
+            Learn ethical hacking, vulnerability assessment, and cyber defense.
+            Develop industry-ready skills through hands-on projects.
           </p>
         </div>
       </div>
 
       {/* Skills Navigation */}
       <div className="webdesign-skills">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>Bootstrap</span>
-        <span>VS Code</span>
+        <span>Network Security</span>
+        <span>Ethical Hacking</span>
+        <span>Operating Systems Security</span>
+        <span>Web Application Security</span>
+        <span>Cyber Security Tools</span>
       </div>
 
       {/* Image Section */}

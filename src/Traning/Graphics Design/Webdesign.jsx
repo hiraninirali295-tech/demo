@@ -1,6 +1,6 @@
 import React from "react";
 import "./Webdesign.css";
-import bannerImg from "../../img/webdesign.png";
+import bannerImg from "../../img/Graphics Design.png";
 
 const WebDesignSection = () => {
   return (
@@ -12,20 +12,19 @@ const WebDesignSection = () => {
           <h1>Graphics Design</h1>
 
           <p>
-            Learn how to design professional, user-friendly, and fully
-            responsive websites from basic to advanced level with real-world
-            projects.
+            Bring your ideas to life with creative graphic design.
+            Gain practical experience with industry-focused projects.
           </p>
         </div>
       </div>
 
       {/* Skills Navigation */}
       <div className="webdesign-skills">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>Bootstrap</span>
-        <span>VS Code</span>
+        <span>Adobe Photoshop</span>
+        <span>Adobe Illustrator</span>
+        <span>CorelDRAW</span>
+        <span>Canva</span>
+        <span>Logo Design</span>
       </div>
 
       {/* Image Section */}

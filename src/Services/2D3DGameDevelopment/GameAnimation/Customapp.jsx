@@ -1,8 +1,9 @@
 import React from "react";
 import { RiArrowRightUpLine } from "react-icons/ri";
-import "./Customapp.css"
+import "./Customapp.css";
+import img1 from "../../../img/Game Animation.jpg";
 
-import mobileImg from "../../../img/43c1696b9fc2d654fb0381fa328074b2506346cd.jpg";
+import mobileImg from "../../../img/Game Animation.jpg";
 
 const CustomApp = () => {
   return (
@@ -14,23 +15,23 @@ const CustomApp = () => {
           <div className="appdev-left">
 
             <h1 className="appdev-title">
-              Custom
+              Game 
               <br />
 
               <span className="appdev-hover-wrapper">
 
-                <span className="appdev-text-left">
+                {/* <span className="appdev-text-left">
                   App
-                </span>
+                </span> */}
 
                 <img
-                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=300"
+                  src={img1}
                   alt="user"
                   className="appdev-user-img"
                 />
 
                 <span className="appdev-text-right">
-                  Development
+                  Animation
                 </span>
 
               </span>
@@ -38,8 +39,8 @@ const CustomApp = () => {
             </h1>
 
             <p className="appdev-desc">
-              We create secure, scalable, and user-friendly
-              applications tailored to your business goals.
+           Create high-quality game animations that bring characters and 
+           environments to life with smooth motion and realistic effects.
             </p>
 
           </div>

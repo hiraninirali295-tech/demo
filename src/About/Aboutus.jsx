@@ -124,9 +124,9 @@ const
 
           <div className="about-right">
             <p>
-              Where innovation meets excellence in the world of
-              Information Technology. At Grow Developer, we are
-              dedicated to providing cutting-edge digital solutions.
+              Where innovation meets excellence in the world of Information Technology. <br />
+              At Grow Developer, we are dedicated to providing cutting-edge solutions <br />
+              and services that empower businesses and individuals to thrive in the digital age.
             </p>
 
             <div className="team-images">

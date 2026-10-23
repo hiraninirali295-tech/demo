@@ -19,7 +19,7 @@
   color: #000000;
   font-weight: 600;
   font-size:50px;
-  padding-left: 90px;
+  /* padding-left: 90px; */
 }
 
 
@@ -106,13 +106,6 @@
   transform: translate(-50%, -50%);
   opacity: 0;
 
- transition:
-
-    transform 5s ease-in-out,
-    opacity 10s ease-in-out;
-
-
-
   padding: 35px;
   box-sizing: border-box;
 
@@ -122,12 +115,12 @@
   margin-top: 60px;
 }
 
-.small-texts{
+/* .small-texts{
   color: #000000;
   font-size: 40px;
   font-weight: 600;
   padding-left: 100px;
-}
+} */
 
 .card-img {
   width: 70px;
@@ -317,10 +310,7 @@ border: 1px solid ;
     padding: 20px 15px;
   }
 
-  .left-side {
-    width: 100%;
-    text-align: center;
-  }
+
   .testimonal-titles{
     font-size: 20px;
     padding-left: 5px;
@@ -334,5 +324,89 @@ border: 1px solid ;
 
 
 .dark-mode .small-texts{
+  color: #FFFFFF;
+}
+
+
+
+.small-texts {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #000000 !important;
+  font-weight:600;
+  font-size: 25px !important;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+/* TEXT */
+.small-texts-wrap {
+  position: relative;
+  height: 30px;
+  overflow: hidden;
+}
+
+.small-texts-text,
+.small-texts-text-hover {
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.small-texts-text-hover {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  white-space: nowrap;
+}
+
+.small-texts:hover .small-texts-text {
+  transform: translateY(-100%);
+}
+
+.small-texts:hover .small-texts-text-hover {
+  transform: translateY(-100%);
+}
+
+/* ICON */
+.small-texts-icon-wrap {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+}
+
+.small-texts-icon,
+.small-texts-icon-hover {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.small-texts-icon-hover {
+  transform: translateY(100%);
+}
+
+.small-texts:hover .small-texts-icon {
+  transform: translateY(-100%);
+}
+
+.small-texts:hover .small-texts-icon-hover {
+  transform: translateY(0);
+}
+
+.dark-mode .small-texts-text{
+  color: #FFFFFF;
+}
+.dark-mode .small-texts-text-hover{
+  color: #FFFFFF;
+}
+.dark-mode .small-texts-icon{
+  color: #FFFFFF;
+}
+.dark-mode .small-texts-icon-hover{
   color: #FFFFFF;
 }

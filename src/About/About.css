@@ -4,7 +4,7 @@
   overflow: hidden;
 }
 
-/* TOP CONTENT */
+
 
 .about-top {
   position: relative;
@@ -19,13 +19,7 @@
   flex: 1;
 }
 
-/* .about-tag {
-  display: inline-block;
-  font-size: 20px;
-  margin-bottom: 30px;
-  font-weight: 600;
-   color: #000000;
-}  */
+
 
 
 
@@ -34,7 +28,7 @@
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  font-size: 20px;
+  font-size: 22px;
   margin-bottom: 30px;
   font-weight: 600;
   color: #000000;
@@ -42,7 +36,7 @@
   overflow: hidden;
 }
 
-/* TEXT ANIMATION */
+
 .about-tag-wrap {
   position: relative;
   height: 28px;
@@ -70,7 +64,7 @@
   transform: translateY(-100%);
 }
 
-/* ICON ANIMATION */
+
 .about-tag-icon-wrap {
   position: relative;
   width: 24px;
@@ -100,21 +94,12 @@
   transform: translateY(0);
 }
 
-
-
-
-
-
-
-
-
-
-
 .about-left h1 {
-  font-size: clamp(50px, 7vw, 80px);
+  font-size:77px;
   line-height: 1;
   font-weight: 600;
-  color: #111;
+  color:#1E1E1E;
+  letter-spacing: -1px;
 }
 
 .about-right {
@@ -143,7 +128,7 @@ margin-top: 30px;
   border-radius: 20px;
 }
 
-/* SWIPER */
+
 
 
 
@@ -152,19 +137,7 @@ margin-top: 30px;
   width: 700px !important;
 }
 
-/* CARD */
 
-/* .travel-card {
-  position: relative;
-  width: 100%;
-  height: 550px;
-  border-radius: 20px;
-  overflow: hidden;
-  background-position: center;
-  background-size: cover;
-} */
-
-/* BUTTON */
 
 .more-btn {
   position: absolute;
@@ -184,7 +157,7 @@ margin-top: 30px;
   justify-content: center;
 }
 
-/* MODAL */
+
 
 .custom-modal {
   position: fixed;
@@ -199,11 +172,7 @@ margin-top: 30px;
   padding: 20px;
 }
 
-/* .modal-box {
-  position: relative;
-  width: 100%;
-  max-width: 900px;
-} */
+
 
 .modal-box img {
   width: 100%;
@@ -223,8 +192,7 @@ margin-top: 30px;
   cursor: pointer;
 }
 
-/* ========================= */
-/* TABLET */
+
 
 @media (max-width: 991px) {
   .about-scroll-section {
@@ -246,11 +214,7 @@ margin-top: 30px;
     max-width: 100%;
   }
 
-  .about-right p {
-    font-size: 20px !important;
-    line-height: 1.6;
-    
-  }
+ 
 
   .slider-container .swiper {
     padding-left: 20px;
@@ -266,8 +230,7 @@ margin-top: 30px;
   }
 }
 
-/* ========================= */
-/* MOBILE */
+
 
 @media (max-width: 768px) {
   .about-scroll-section {
@@ -285,8 +248,8 @@ margin-top: 30px;
   }
 
   .about-right p {
-    font-size: 15px;
-    margin-bottom: 25px;
+    font-size: 18px;
+    /* margin-bottom: 25px; */
   }
 
   .team-images {
@@ -333,8 +296,7 @@ margin-top: 30px;
   }
 }
 
-/* ========================= */
-/* SMALL MOBILE */
+
 
 @media (max-width: 480px) {
   .about-left h1 {
@@ -345,11 +307,17 @@ margin-top: 30px;
     height: 300px;
   }
 
-  .about-right p {
-    font-size: 14px;
-  }
+ 
 }
 
 .dark-mode .about-right p{
   color: #FFFFFF !important;
+}
+
+.dark-mode .about-tag{
+  color: #FFFFFF;
+}
+
+.dark-mode .about-left h1{
+  color: #FFFFFF;
 }

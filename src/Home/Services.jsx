@@ -66,7 +66,7 @@
 //     <>
 // <div className="heading-container">
 //   <div className="left-side">
- 
+
 
 //     <p className="small-texts" data-text="Professional Values">
 //   <span className="small-text-inner">Professional Values</span>
@@ -85,7 +85,7 @@
 //       <div className="values-sticky-wrap">
 //         <div className="mobile-image-wrap">
 //           <img src={mobileImg} alt="" className="mobile-img" />
-          
+
 
 //           <div className="cards-animation-wrap">
 //             {cards.map((item, i) => (
@@ -181,7 +181,7 @@
 // //   <div className="left-side">
 // //     <p className="small-texts">
 
-      
+
 // //       Professional Values <MdArrowOutward />
 // //     </p>
 
@@ -197,7 +197,7 @@
 // //       <div className="values-sticky-wrap">
 // //         <div className="mobile-image-wrap">
 // //           <img src={mobileImg} alt="" className="mobile-img" />
-          
+
 
 // //           <div className="cards-animation-wrap">
 // //             {cards.map((item, i) => (
@@ -288,45 +288,68 @@ export default function ValuesSection() {
   return (
 
     <>
-<div className="heading-container">
-  <div className="left-side">
-    <p className="small-texts">
-
-      
-      Professional Values <MdArrowOutward />
-    </p>
-
-    <h2 className="testimonal-titles">
-      Values That Define <br />
-      Who We Are
-    </h2>
-  </div>
-</div>
-    <section className={`values-section ${active ? "active" : ""}`}>
+      <div className="heading-container">
+        {/* <div className="left-side">
+          <p className="small-texts">
 
 
-      <div className="values-sticky-wrap">
-        <div className="mobile-image-wrap">
-          <img src={mobileImg} alt="" className="mobile-img" />
-          
+            Professional Values <MdArrowOutward />
+          </p>
 
-          <div className="cards-animation-wrap">
-            {cards.map((item, i) => (
-              <div className="value-card" key={i}>
-                <div className="card-img">
-                  <img src={item.img} alt={item.title} />
+          <h2 className="testimonal-titles">
+            Values That Define <br />
+            Who We Are
+          </h2>
+        </div>  */}
+
+         <p className="small-texts">
+
+            <span className="small-texts-wrap">
+              <span className="small-texts-text">Professional Values</span>
+              <span className="small-texts-text-hover">Professional Values</span>
+            </span>
+
+            <span className="small-texts-icon-wrap">
+              <span className="small-texts-icon">
+                <MdArrowOutward />
+              </span>
+
+              <span className="small-texts-icon-hover">
+                <MdArrowOutward />
+              </span>
+            </span>
+
+          </p>
+          <h2 className="testimonal-titles">
+            Values That Define <br />
+            Who We Are
+          </h2>
+      </div>
+      <section className={`values-section ${active ? "active" : ""}`}>
+
+
+        <div className="values-sticky-wrap">
+          <div className="mobile-image-wrap">
+            <img src={mobileImg} alt="" className="mobile-img" />
+
+
+            <div className="cards-animation-wrap">
+              {cards.map((item, i) => (
+                <div className="value-card" key={i}>
+                  <div className="card-img">
+                    <img src={item.img} alt={item.title} />
+                  </div>
+
+                  <div className="card-content">
+                    <h3>{item.title}</h3>
+                    <p>{item.desc}</p>
+                  </div>
                 </div>
-
-                <div className="card-content">
-                  <h3>{item.title}</h3>
-                  <p>{item.desc}</p>
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
     </>
   );
 }
